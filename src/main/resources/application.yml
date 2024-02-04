@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  ssl:
+    client-auth: need
+    enabled: true
+    key-password: test12345
+    key-store: /Users/sanyam/Downloads/mtls/keystore.jks
+    key-store-password: test12345
+    key-store-type: JKS
+    trust-store: /Users/sanyam/Downloads/mtls/truststore.jks
+    trust-store-password: test12345
+    trust-store-type: JKS
+spring:
+  data:
+    mongodb:
+      database: functionalUsers
+      host: localhost
+      port: 27017
+service:
+  token-timeout-ms: 3600
+  token-secret: thisISaassfj34dffdfdfdfcss
